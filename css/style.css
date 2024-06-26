@@ -1,0 +1,343 @@
+/*Common CSS Starts*/
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family:"Open Sans" , arial;
+}
+
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    color: #000;
+    background-color: #cfc91d ;
+    padding: 19px 43px;
+    display: inline-block;
+    border: none;
+    
+}
+
+.heading h2{
+    font-weight: 800;
+    color: #02918c;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 70px;
+}
+
+.heading p {
+    color: #7e8287;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.sectiontitle p{
+    color: #7e8287;
+    line-height: 40px;
+}
+
+.sectiontitle p span{
+    font-weight: 800px;
+font-size: 23px;
+}
+
+.card span {
+    text-align: center;
+    color: aqua;
+    font-size: 30px;
+}
+.card h4 {
+   
+    color:#7e8287;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 25px 0;
+}
+.card p {
+    
+    color: #7e8287;
+    font-size: 11px;
+}
+
+
+/*Common CSS Ends*/
+
+/*Nav Bar Starts*/
+
+nav {
+    background-color: #02918c;
+}
+
+nav .row {
+    align-items: center;
+}
+
+nav .Logo {
+    width: 30% ;
+    
+}
+ 
+nav .menue {
+    width: 70%;
+    text-align: right;
+}
+
+nav .menue ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+nav .menue ul li a {
+    color: #fff;
+    font-weight:800 ;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 26px 25px ;
+    display: inline-block;
+}
+
+nav ul li .submenu {
+    position: absolute;
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: 0;
+    transition: 0.3s;
+    width: 250px;
+}
+
+nav ul li:hover .submenu {
+    opacity: 1;
+    visibility : 1;
+}
+
+nav ul li .submenu li a{
+    color: #000;
+    padding: 10px 18px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+nav ul li .submenu li {
+    display: block;
+}
+/*Nav Bar Ends*/
+
+/* Banner Starts*/
+
+#banner {
+    background-image: url(../images/banner.png) ;
+    height: 728px;
+    background-size: cover;
+    background-position: center; 
+    color: white;
+    text-align: center;
+}
+
+#banner .row {
+    height: 100%;
+}
+
+#banner .banner_cnt h5 {
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_cnt h1 {
+    font-size: 68px;
+    font-size: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+#banner .banner_cnt img {
+    margin: 50px 0;
+}
+
+#banner .banner_cnt {
+    width: 100%;
+}
+/* Banner Ends*/
+
+
+
+
+/*About  me */
+
+#about {
+    padding: 98px 0;
+    text-align: center;
+}
+
+span {
+    font-weight: 800;
+}
+
+#about .aboutcards {
+    margin-top: 80px;
+
+}
+
+#about .aboutcards .card {
+    width: 25%;
+    border-right: 1px solid #7e8287;
+    padding: 35px 0;
+}
+
+
+#about .aboutcards .card:last-child {
+    width: 25%;
+    border: none;
+   padding: 35px 0;
+}
+
+
+/* About me ends*/
+
+/*Services*/
+
+#Services  {
+    background-image: url(../images/bg.png);
+    background-size:cover ;
+    
+}
+
+#Services .container .card:nth-child(1) {
+    width: 25%;
+}
+#Services .container .card:nth-child(2) {
+    width: 25%;
+}
+#Services .container .card:nth-child(3) {
+    width: 25%;
+}
+#Services .container .card:nth-child(4) {
+    width: 25%;
+}
+
+
+/*Services Ends*/
+
+/*My work*/
+
+#work {
+    line-height: 2;
+}
+
+.heading p {
+    color: #7e8287;
+    text-align: center;
+}
+#work h2 {
+    padding-top: 100px;
+}
+
+#work .workcard {
+    width: 25%;
+    position: relative;
+}
+
+#work .workcard img {
+    width: 100%;
+    display: block;
+
+}
+
+#work .workcard .overlay {
+    background-color:  rgba(2, 145, 140,0.85);
+    position: absolute;
+    top: 20px ;
+    bottom: 20px;
+    left: 28px;
+    right: 28px;
+    opacity: 0;
+    text-align: center;
+    color: #ccc;
+    visibility: hidden;
+    padding-top: 120px;
+   margin-top: 80px;
+   transition: 0.35s;
+}
+
+
+#work .workcard:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+/*My work ends*/
+
+/*Contact me*/
+ #contactme {
+    background-color: #000;
+    padding: 70px 0;
+    text-align: center;
+   
+}
+
+#contactme .forminput {
+    width: 638px;
+    margin: auto;
+}
+
+#contactme .forminput input {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 64px;
+    outline: none;
+}
+#contactme .forminput:nth-child(1) {
+    margin-top: 0;
+}
+
+#contactme .forminput:nth-child(3) {
+    width: 918px;
+}
+
+#contactme .forminput:nth-child(4) {
+    width: 918px;
+    padding-bottom: 50px;
+}
+/*Contact me Ends*/
+
+#ending {
+    text-align: center;
+    padding: 15px;
+    background-color: #000000b4;
+}
